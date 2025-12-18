@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'appbarcontent.dart';
 import 'albums.dart';
+import 'mix.dart';
+import 'Hits.dart';
+import 'Top.dart';
 
 void main() {
   runApp(const MyApp());
@@ -61,8 +64,70 @@ class _MyHomePageState extends State<MyHomePage> {
         elevation: 0,
       ),
 
-      body: ListView(children: [
+      body: ListView(
+        children: [
+          const Padding(
+            padding: EdgeInsets.all(16.0),
+            child: Text(
+              "Albums avec des titres que vous aimez",
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            ),
+          ),
+          const Albums(),
 
+          const Padding(
+            padding: EdgeInsets.all(16.0),
+            child: Text(
+              "Récemment écoutés",
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            ),
+          ),
+          const Mix(),
+
+          const Padding(
+            padding: EdgeInsets.all(16.0),
+            child: Text(
+              "Favoris",
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            ),
+          ),
+          const Top(),
+
+          const Padding(
+            padding: EdgeInsets.all(16.0),
+            child: Text(
+              "Mix level2",
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            ),
+          ),
+          const Mix(),
+
+          const Padding(
+            padding: EdgeInsets.all(16.0),
+            child: Text(
+              "Hits Everyone",
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            ),
+          ),
+          const Hit(),
+
+          const Padding(
+            padding: EdgeInsets.all(16.0),
+            child: Text(
+              "RMix des Ecoutes",
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            ),
+          ),
+          const Mix(),
+
+          const Padding(
+            padding: EdgeInsets.all(16.0),
+            child: Text(
+              "Top Hits",
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            ),
+          ),
+          const Top(),
         ],
       ),
 
@@ -78,6 +143,3 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
-
-
-//Widget pour 

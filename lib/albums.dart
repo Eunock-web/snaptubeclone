@@ -13,8 +13,20 @@ class Albums extends StatelessWidget {
         // On utilise 'children' au pluriel
         children: [
           _CardAlbum(chanteuse: "Fantasia", titre: "Album One"),
-          const SizedBox(width: 16), // Espace entre les albums
+          const SizedBox(width: 16), 
           _CardAlbum(chanteuse: "Fantasia", titre: "Album Two"),
+                    _CardAlbum(chanteuse: "Fantasia", titre: "Album One"),
+          const SizedBox(width: 16), 
+          _CardAlbum(chanteuse: "Fantasia", titre: "Album Two"),
+
+          _CardAlbum(chanteuse: "Fantasia", titre: "Album One"),
+          const SizedBox(width: 16), 
+          _CardAlbum(chanteuse: "Fantasia", titre: "Album Two"),
+
+          _CardAlbum(chanteuse: "Fantasia", titre: "Album One"),
+          const SizedBox(width: 16), 
+          _CardAlbum(chanteuse: "Fantasia", titre: "Album Two"),
+
         ],
       ),
     );
@@ -35,8 +47,7 @@ class _CardAlbum extends StatelessWidget {
         // ClipRRect permet de couper l'image pour qu'elle soit arrondie
         ClipRRect(
           borderRadius: BorderRadius.circular(15),
-          child: Image.network(
-            "https://i.pinimg.com/736x/98/5f/df/985fdfd9d673d91bd830d4ab3e380341.jpg",
+          child: Image.asset("assets/_.jpeg",
             width: 160,
             height: 160,
             fit: BoxFit.cover, // L'image remplit bien le carré
