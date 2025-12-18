@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'appbarcontent.dart';
+import 'albums.dart';
 
 void main() {
   runApp(const MyApp());
@@ -60,8 +61,9 @@ class _MyHomePageState extends State<MyHomePage> {
         elevation: 0,
       ),
 
-      body: ListView(
+      body: ListView(children: [
 
+        ],
       ),
 
       bottomNavigationBar: NavigationBar(
